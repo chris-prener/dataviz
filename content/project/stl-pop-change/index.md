@@ -31,7 +31,7 @@ url_code = ""
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
-url_custom = [{icon_pack = "fas", icon="download", name="Download", url = "nhoodChange.png"}, {icon_pack = "fab", icon="github", name="Data & Code", url = "https://github.com/chris-prener/STL_DEMOGRAPHY_NhoodChange"}, {icon_pack = "fab", icon="twitter", name="Tweet", url = "https://twitter.com/chrisprener/status/1071078021690474496"}]
+url_custom = [{icon_pack = "fas", icon="download", name="Download", url = "https://chris-prener.github.io/dataviz/project/stl-pop-change/nhoodChange.png"}, {icon_pack = "fab", icon="github", name="Data & Code", url = "https://github.com/chris-prener/STL_DEMOGRAPHY_NhoodChange"}, {icon_pack = "fab", icon="twitter", name="Tweet", url = "https://twitter.com/chrisprener/status/1071078021690474496"}]
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your project's folder. 
@@ -48,7 +48,7 @@ With the release of the 2013-2017 5-year estimates from the U.S. Census Bureau's
 
 The largest estimated population growth is found in Downtown, Downtown West, the Central West End, The Grove, Lafayette Square, and Tower Grove East. Much of the rest of Midtown and South City saw either modest population increases or were stable. North City, with the exception of Old North and the West End, saw varying degrees to population loss. 
 
-[![](/project/stl-pop-change/nhoodChange.png)](nhoodChange.png)
+[![](https://chris-prener.github.io/dataviz/project/stl-pop-change/nhoodChange.png)](https://chris-prener.github.io/dataviz/project/stl-pop-change/nhoodChange.png)
 
 ### Technical Notes
 This map was created by interpolating census tract data into neighborhood boundaries for both the 2010 Decennial Census and the 2013-2017 ACS. Population change was then calculated and mapped using a modification of [Jenks natural breaks](https://en.wikipedia.org/wiki/Jenks_natural_breaks_optimization). 
