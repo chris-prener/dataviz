@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GIS on Christopher Prener&#39;s DataViz Gallery</title>
+    <link>/tags/gis/</link>
+    <description>Recent content in GIS on Christopher Prener&#39;s DataViz Gallery</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018-2019 Christopher G. Prener</copyright>
+    <lastBuildDate>Sun, 09 Dec 2018 00:00:00 -0600</lastBuildDate>
+    
+	<atom:link href="/tags/gis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>St. Louis Neighborhood Change</title>
+      <link>/project/stl-pop-change/</link>
+      <pubDate>Sun, 09 Dec 2018 00:00:00 -0600</pubDate>
+      
+      <guid>/project/stl-pop-change/</guid>
+      <description>With the release of the 2013-2017 5-year estimates from the U.S. Census Bureau&amp;rsquo;s American Community Survey, I wanted to get a sense of how St. Louis&amp;rsquo;s neighborhoods are changing in terms of population. These percentages compare the latest population estimates to the 2010 Decennial Census.
+The largest estimated population growth is found in Downtown, Downtown West, the Central West End, The Grove, Lafayette Square, and Tower Grove East. Much of the rest of Midtown and South City saw either modest population increases or were stable.</description>
+    </item>
+    
+  </channel>
+</rss>
