@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Christopher Prener&#39;s DataViz Gallery on Christopher Prener&#39;s DataViz Gallery</title>
+    <link>/</link>
+    <description>Recent content in Christopher Prener&#39;s DataViz Gallery on Christopher Prener&#39;s DataViz Gallery</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018-2019 Christopher G. Prener</copyright>
+    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0500</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>St. Louis Neighborhood Change</title>
+      <link>/project/stl-pop-change/</link>
+      <pubDate>Sun, 09 Dec 2018 00:00:00 -0600</pubDate>
+      
+      <guid>/project/stl-pop-change/</guid>
+      <description>
+
+&lt;p&gt;With the release of the 2013-2017 5-year estimates from the U.S. Census Bureau&amp;rsquo;s &lt;a href=&#34;https://www.census.gov/programs-surveys/acs/&#34; target=&#34;_blank&#34;&gt;American Community Survey&lt;/a&gt;, I wanted to get a sense of how St. Louis&amp;rsquo;s neighborhoods are changing in terms of population. These percentages compare the latest population estimates to the 2010 Decennial Census.&lt;/p&gt;
+
+&lt;p&gt;The largest estimated population growth is found in Downtown, Downtown West, the Central West End, The Grove, Lafayette Square, and Tower Grove East. Much of the rest of Midtown and South City saw either modest population increases or were stable. North City, with the exception of Old North and the West End, saw varying degrees to population loss.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;/project/stl-pop-change/nhoodChange.png&#34;&gt;&lt;img src=&#34;/project/stl-pop-change/nhoodChange.png&#34; alt=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;technical-notes&#34;&gt;Technical Notes&lt;/h3&gt;
+
+&lt;p&gt;This map was created by interpolating census tract data into neighborhood boundaries for both the 2010 Decennial Census and the 2013-2017 ACS. Population change was then calculated and mapped using a modification of &lt;a href=&#34;https://en.wikipedia.org/wiki/Jenks_natural_breaks_optimization&#34; target=&#34;_blank&#34;&gt;Jenks natural breaks&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;ACS data should be interpreted as &lt;em&gt;estimates&lt;/em&gt; and not exact population values, and are therefore subject to a degree of error. Interpolation introduces a degree of error as well, particularly in neighborhoods boarding significant un-populated areas like Forest Park or the Botanical Gardens.&lt;/p&gt;
+
+&lt;p&gt;All data analysis and mapping was done using &lt;code&gt;R&lt;/code&gt;, using the &lt;a href=&#34;https://walkerke.github.io/tidycensus/&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;tidycensus&lt;/code&gt;&lt;/a&gt; package for data access, the &lt;a href=&#34;https://github.com/slu-openGIS/areal&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;areal&lt;/code&gt;&lt;/a&gt; package for interpolations, and &lt;a href=&#34;http://ggplot2.tidyverse.org&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;ggplot2&lt;/code&gt;&lt;/a&gt; for mapping.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 -0500</pubDate>
+      
+      <guid>/privacy/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
