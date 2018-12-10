@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Homes on Christopher Prener&#39;s DataViz Gallery</title>
+    <title>Homes on Chris&#39;s DataViz Gallery</title>
     <link>/dataviz/home/</link>
-    <description>Recent content in Homes on Christopher Prener&#39;s DataViz Gallery</description>
+    <description>Recent content in Homes on Chris&#39;s DataViz Gallery</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018-2019 Christopher G. Prener</copyright>
-    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 09 Dec 2018 00:00:00 -0600</lastBuildDate>
     
 	<atom:link href="/dataviz/home/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Data Visualization Gallery</title>
+      <link>/dataviz/home/hero/</link>
+      <pubDate>Sun, 09 Dec 2018 00:00:00 -0600</pubDate>
+      
+      <guid>/dataviz/home/hero/</guid>
+      <description>A collection of maps and other data visualizations focused on health, crime, and St. Louis created by Christopher Prener, an Assistant Professor of Sociology at Saint Louis University.</description>
+    </item>
     
     <item>
       <title></title>
@@ -28,15 +37,6 @@
       
       <guid>/dataviz/home/projects/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Academic</title>
-      <link>/dataviz/home/hero/</link>
-      <pubDate>Sun, 15 Oct 2017 00:00:00 -0500</pubDate>
-      
-      <guid>/dataviz/home/hero/</guid>
-      <description>The highly flexible website framework for Hugo with an extensible plugin mechanism. Create a beautifully simple site in under 10 minutes 🚀 Latest release   Star</description>
     </item>
     
     <item>
