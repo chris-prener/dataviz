@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 3.1.1">
+  <meta name="generator" content="Hugo 0.52" />
+  <meta name="author" content="Christopher Prener">
+
+  
+  
+  
+  
+    
+  
+  <meta name="description" content="Replicating a map from the Belmar Plan.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/dataviz/project/stl-belmar-crime/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/dataviz/styles.css">
+  
+  <link rel="stylesheet" href="/dataviz/css/custom.css">
+  
+
+  
+  
+  
+
+  
+  <link rel="alternate" href="/dataviz/index.xml" type="application/rss+xml" title="Chris&#39;s DataViz Gallery">
+  <link rel="feed" href="/dataviz/index.xml" type="application/rss+xml" title="Chris&#39;s DataViz Gallery">
+  
+
+  <link rel="manifest" href="/dataviz/site.webmanifest">
+  <link rel="icon" type="image/png" href="/dataviz/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/dataviz/img/icon-192.png">
+
+  <link rel="canonical" href="/dataviz/project/stl-belmar-crime/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="Chris&#39;s DataViz Gallery">
+  <meta property="og:url" content="/dataviz/project/stl-belmar-crime/">
+  <meta property="og:title" content="Violent Crime in St. Louis | Chris&#39;s DataViz Gallery">
+  <meta property="og:description" content="Replicating a map from the Belmar Plan."><meta property="og:image" content="/dataviz/project/stl-belmar-crime/featured.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2018-12-09T00:00:00-06:00">
+  
+  <meta property="article:modified_time" content="2018-12-09T00:00:00-06:00">
+  
+
+  
+
+  
+
+  <title>Violent Crime in St. Louis | Chris&#39;s DataViz Gallery</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/dataviz/">Chris&#39;s DataViz Gallery</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/dataviz">
+            
+            <span>Gallery Homepage</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="https://chris-prener.github.io" target="_blank" rel="noopener">
+            
+            <span>Chris's Website</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article article-project" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="article-header d-xl-none">
+  <img src="/dataviz/project/stl-belmar-crime/featured_hu18df8935a8657bc24eeb712c4aa78cac_290886_1600x400_fill_q90_box_smart1_2.png" class="article-banner" itemprop="image" alt="">
+  <span class="article-header-caption">Violent Crime Density, St. Louis</span>
+</div>
+
+
+<div class="container-fluid split-header d-none d-xl-block">
+  <div class="row">
+    <div class="col-6">
+      <div class="split-header-content">
+        <h1 itemprop="name">Violent Crime in St. Louis</h1>
+
+        
+
+        
+
+<div class="article-metadata">
+
+  
+  
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Christopher Prener">
+  </span>
+  
+
+  <span class="article-date">
+    
+    <meta content="2018-12-09 00:00:00 -0600 CST" itemprop="datePublished">
+    <time datetime="2018-12-09 00:00:00 -0600 CST" itemprop="dateModified">
+      Dec 9, 2018
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Christopher Prener">
+  </span>
+
+  
+
+  
+  
+
+  
+
+  
+
+</div>
+
+
+        
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/chris-prener/STL_CRIME_Belmar" target="_blank" rel="noopener">
+    <i class="fab fa-github mr-1"></i>
+    Data & Code
+  </a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://twitter.com/chrisprener/status/1071078021690474496" target="_blank" rel="noopener">
+    <i class="fab fa-twitter mr-1"></i>
+    Tweet
+  </a>
+
+
+</div>
+
+
+
+        
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Violent%20Crime%20in%20St.%20Louis&amp;url=%2fdataviz%2fproject%2fstl-belmar-crime%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=%2fdataviz%2fproject%2fstl-belmar-crime%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fdataviz%2fproject%2fstl-belmar-crime%2f&amp;title=Violent%20Crime%20in%20St.%20Louis"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=%2fdataviz%2fproject%2fstl-belmar-crime%2f&amp;title=Violent%20Crime%20in%20St.%20Louis"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Violent%20Crime%20in%20St.%20Louis&amp;body=%2fdataviz%2fproject%2fstl-belmar-crime%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="split-header-image">
+        <img src="/dataviz/project/stl-belmar-crime/featured_hu18df8935a8657bc24eeb712c4aa78cac_290886_680x500_fill_q90_box_smart1_2.png" itemprop="image" alt="">
+        <span class="article-header-caption">Violent Crime Density, St. Louis</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="article-container d-xl-none">
+  <h1 itemprop="name">Violent Crime in St. Louis</h1>
+
+  
+
+  
+
+<div class="article-metadata">
+
+  
+  
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Christopher Prener">
+  </span>
+  
+
+  <span class="article-date">
+    
+    <meta content="2018-12-09 00:00:00 -0600 CST" itemprop="datePublished">
+    <time datetime="2018-12-09 00:00:00 -0600 CST" itemprop="dateModified">
+      Dec 9, 2018
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Christopher Prener">
+  </span>
+
+  
+
+  
+  
+
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Violent%20Crime%20in%20St.%20Louis&amp;url=%2fdataviz%2fproject%2fstl-belmar-crime%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=%2fdataviz%2fproject%2fstl-belmar-crime%2f"
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fdataviz%2fproject%2fstl-belmar-crime%2f&amp;title=Violent%20Crime%20in%20St.%20Louis"
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=%2fdataviz%2fproject%2fstl-belmar-crime%2f&amp;title=Violent%20Crime%20in%20St.%20Louis"
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Violent%20Crime%20in%20St.%20Louis&amp;body=%2fdataviz%2fproject%2fstl-belmar-crime%2f">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/chris-prener/STL_CRIME_Belmar" target="_blank" rel="noopener">
+    <i class="fab fa-github mr-1"></i>
+    Data & Code
+  </a>
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://twitter.com/chrisprener/status/1071078021690474496" target="_blank" rel="noopener">
+    <i class="fab fa-twitter mr-1"></i>
+    Tweet
+  </a>
+
+
+</div>
+
+
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p>When Chief Belmar&rsquo;s <a href="https://bloximages.newyork1.vip.townnews.com/stltoday.com/content/tncms/assets/v3/editorial/8/42/8423788c-c647-54dc-89c9-db985e6e77ce/5c3028f56c8fe.pdf.pdf" target="_blank">proposal</a> for consolidating the City and County police departments was <a href="https://www.stltoday.com/news/local/crime-and-courts/st-louis-county-police-chief-proposes-merger-with-st-louis/article_d3ffb36f-fa7f-553b-93f4-ea6c6f0203af.html" target="_blank">released to the media</a>, one page happened to catch my eye. It had two kernal density maps of Part 1 crimes, which are defined by the FBI as all violent crimes (aggravated assault, rape, murder, and robbery) as well as property crimes (arson, burglary, larceny-theft, and motor vehicle theft).</p>
+
+<p><img src="belmarMap.png" alt="" /></p>
+
+<p>As you can see, the map quality was poor and it lacked a legend (or even a description of what Part 1 crimes are). It also leaves viewers with the strong impression that crime is focused on Downtown. This supports the report&rsquo;s argument that policing resources need to be focused on two areas, Downtown and the Central West End. The report makes no mention of the hotspot in South City. The map was also focusedon the city&rsquo;s midsection, cutting off both North and South City.</p>
+
+<h2 id="recreating-the-density-maps">Recreating the Density Maps</h2>
+
+<p>As an exercise in using some new mapping software, I decided to recreate these maps. First up with my attempt to recreate the original map in the Belmar report.</p>
+
+<p><img src="density_map_p1_cropped.png" alt="" /></p>
+
+<p>The map is not fundamentally different, though I would argue it is easier to read and provides more context (i.e. a legend and clear breaks between the different colors on the map). We still see noticiable clusters over Downtown and in South City.</p>
+
+<p>I do think, however, the select of Part 1 Crimes was done for a specific reason. If you map violent crime (aggravated assault, rape, murder, and robbery), the conclusion you would come to about Downtown is slightly different.</p>
+
+<p><img src="density_map_v_cropped.png" alt="" /></p>
+
+<p>In terms of violent crime, the Downtown area of St. Louis no longer makes a significant impression relative to the rest of North City. To be sure, violent crime remains a concern in Downtown St. Louis, it just isn&rsquo;t as remarkable.</p>
+
+<h2 id="crime-is-in-part-a-function-of-population-density">Crime is (in Part) a Function of Population Density</h2>
+
+<p>Another thing wholly absent from the Belmar Proposal is that crime is, in part, influenced by population density. We expect more crime to exist in areas where there are more people. We can see this pretty clearly in St. Louis for both part 1 and violent crimes:</p>
+
+<p><img src="pop_plot_p1.png" alt="" /></p>
+
+<p><img src="pop_plot_v.png" alt="" /></p>
+
+<p>Given this relationship, it is important to look at crime <em>rates</em> as opposed to the volume of crime in a given area.</p>
+
+<h2 id="mapping-crime-rates-in-st-louis">Mapping Crime Rates in St. Louis</h2>
+
+<p>To get a sense about whether crime appears high in Downtown St. Louis because it is one of the more densly populated areas of the city, I&rsquo;ve mapped Part 1 crime <em>rates</em> per 1,000 individuals. To get there, I divide the total number of crimes by the total number of esimtated people living in each neighborhood, and then multiply by 1,000.</p>
+
+<p><img src="rate_map_p1_cropped.png" alt="" /></p>
+
+<p>Once we factor in population density, we see that while Downtown remains a significant focal point for crime, there are areas both north and south of Downtown (as well as north of Forest Park) that also have high crime rates, but are not emphasized on the Belmar Proposal map.</p>
+
+<p><img src="rate_map_v_cropped.png" alt="" /></p>
+
+<p>When we look only at violent crimes, the argument for focusing on Downtown goes away - our attention is drawn to North City as the locus for much of the violent crime in St. Louis.</p>
+
+<h2 id="bottom-line">Bottom Line</h2>
+
+<p>The hotspot that the Belmar proposal highlights is due to property crimes like larcency and motor vehicle theft, rather than violent crimes. At no point is there a significant volumne of crime in the Central West End, which was the other neighborhood highlighted in Belmar&rsquo;s proposal. In fact, a good argument could be made that policing resources are most needed in the areas of the city no emphasized in the report at all.</p>
+
+    </div>
+
+    
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/dataviz/tags/stlouis/">StLouis</a>
+  
+  <a class="badge badge-light" href="/dataviz/tags/gis/">GIS</a>
+  
+  <a class="badge badge-light" href="/dataviz/tags/crime/">Crime</a>
+  
+</div>
+
+
+
+    
+
+
+
+
+
+
+<div class="media author-card" itemscope itemtype="http://schema.org/Person">
+  
+  <img class="portrait mr-3" src="/dataviz/img/headShot.png" itemprop="image" alt="Avatar">
+  
+  <div class="media-body">
+    <h5 class="card-title" itemprop="name"><a href="/dataviz/">Christopher Prener</a></h5>
+    <h6 class="card-subtitle">Assistant Professor of Sociology</h6>
+    
+    <ul class="network-icon" aria-hidden="true">
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://chris-prener.github.io" target="_blank" rel="noopener">
+          <i class="fas fa-home"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      <li>
+        <a itemprop="sameAs" href="mailto:chris.prener@slu.edu" >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://twitter.com/chrisprener" target="_blank" rel="noopener">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://scholar.google.com/citations?user=0PjCUTYAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+          <i class="ai ai-google-scholar"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://orcid.org/0000-0002-4310-9888" target="_blank" rel="noopener">
+          <i class="ai ai-orcid"></i>
+        </a>
+      </li>
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a itemprop="sameAs" href="https://github.com/chris-prener" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+
+
+    
+    
+
+    
+
+      
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+    
+
+  </div>
+</article>
+
+
+
+<div class="container">
+  <footer class="site-footer">
+  
+  <p class="powered-by">
+    <a href="/dataviz/privacy/">Privacy Policy</a>
+  </p>
+  
+
+  <p class="powered-by">
+    &copy; 2018-2019 Christopher G. Prener &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+</div>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/dataviz/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/dataviz/js/academic.min.74b0d3361475b08c40cf31120e82937b.js"></script>
+
+    
+
+  </body>
+</html>
+
