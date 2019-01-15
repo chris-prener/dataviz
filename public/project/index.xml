@@ -23,12 +23,12 @@ The largest estimated population growth is found in Downtown, Downtown West, the
     </item>
     
     <item>
-      <title>Violent Crime in St. Louis</title>
+      <title>Violent Crime in St. Louis, 2016-2017</title>
       <link>/dataviz/project/stl-belmar-crime/</link>
       <pubDate>Sun, 09 Dec 2018 00:00:00 -0600</pubDate>
       
       <guid>/dataviz/project/stl-belmar-crime/</guid>
-      <description>When Chief Belmar&amp;rsquo;s proposal for consolidating the City and County police departments was released to the media, one page happened to catch my eye. It had two kernal density maps of Part 1 crimes, which are defined by the FBI as all violent crimes (aggravated assault, rape, murder, and robbery) as well as property crimes (arson, burglary, larceny-theft, and motor vehicle theft).
+      <description>When Chief Belmar&amp;rsquo;s proposal for consolidating the City and County police departments was released to the media, one page happened to catch my eye. It had two kernel density maps of Part 1 crimes, which are defined by the FBI as all violent crimes (aggravated assault, rape, murder, and robbery) as well as property crimes (arson, burglary, larceny-theft, and motor vehicle theft).
 As you can see, the map quality was poor and it lacked a legend (or even a description of what Part 1 crimes are).</description>
     </item>
     

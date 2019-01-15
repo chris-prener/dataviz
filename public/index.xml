@@ -35,18 +35,18 @@
     </item>
     
     <item>
-      <title>Violent Crime in St. Louis</title>
+      <title>Violent Crime in St. Louis, 2016-2017</title>
       <link>/dataviz/project/stl-belmar-crime/</link>
       <pubDate>Sun, 09 Dec 2018 00:00:00 -0600</pubDate>
       
       <guid>/dataviz/project/stl-belmar-crime/</guid>
       <description>
 
-&lt;p&gt;When Chief Belmar&amp;rsquo;s &lt;a href=&#34;https://bloximages.newyork1.vip.townnews.com/stltoday.com/content/tncms/assets/v3/editorial/8/42/8423788c-c647-54dc-89c9-db985e6e77ce/5c3028f56c8fe.pdf.pdf&#34; target=&#34;_blank&#34;&gt;proposal&lt;/a&gt; for consolidating the City and County police departments was &lt;a href=&#34;https://www.stltoday.com/news/local/crime-and-courts/st-louis-county-police-chief-proposes-merger-with-st-louis/article_d3ffb36f-fa7f-553b-93f4-ea6c6f0203af.html&#34; target=&#34;_blank&#34;&gt;released to the media&lt;/a&gt;, one page happened to catch my eye. It had two kernal density maps of Part 1 crimes, which are defined by the FBI as all violent crimes (aggravated assault, rape, murder, and robbery) as well as property crimes (arson, burglary, larceny-theft, and motor vehicle theft).&lt;/p&gt;
+&lt;p&gt;When Chief Belmar&amp;rsquo;s &lt;a href=&#34;https://bloximages.newyork1.vip.townnews.com/stltoday.com/content/tncms/assets/v3/editorial/8/42/8423788c-c647-54dc-89c9-db985e6e77ce/5c3028f56c8fe.pdf.pdf&#34; target=&#34;_blank&#34;&gt;proposal&lt;/a&gt; for consolidating the City and County police departments was &lt;a href=&#34;https://www.stltoday.com/news/local/crime-and-courts/st-louis-county-police-chief-proposes-merger-with-st-louis/article_d3ffb36f-fa7f-553b-93f4-ea6c6f0203af.html&#34; target=&#34;_blank&#34;&gt;released to the media&lt;/a&gt;, one page happened to catch my eye. It had two kernel density maps of Part 1 crimes, which are defined by the FBI as all violent crimes (aggravated assault, rape, murder, and robbery) as well as property crimes (arson, burglary, larceny-theft, and motor vehicle theft).&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;belmarMap.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;As you can see, the map quality was poor and it lacked a legend (or even a description of what Part 1 crimes are). It also leaves viewers with the strong impression that crime is focused on Downtown. This supports the report&amp;rsquo;s argument that policing resources need to be focused on two areas, Downtown and the Central West End. The report makes no mention of the hotspot in South City. The map was also focusedon the city&amp;rsquo;s midsection, cutting off both North and South City.&lt;/p&gt;
+&lt;p&gt;As you can see, the map quality was poor and it lacked a legend (or even a description of what Part 1 crimes are). It also leaves viewers with the strong impression that crime is focused on Downtown. This supports the report&amp;rsquo;s argument that policing resources need to be focused on two areas, Downtown and the Central West End. The report makes no mention of the hot spot in South City. The map was also focused on the city&amp;rsquo;s midsection, cutting off both North and South City.&lt;/p&gt;
 
 &lt;h2 id=&#34;recreating-the-density-maps&#34;&gt;Recreating the Density Maps&lt;/h2&gt;
 
@@ -54,9 +54,9 @@
 
 &lt;p&gt;&lt;img src=&#34;density_map_p1_cropped.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;The map is not fundamentally different, though I would argue it is easier to read and provides more context (i.e. a legend and clear breaks between the different colors on the map). We still see noticiable clusters over Downtown and in South City.&lt;/p&gt;
+&lt;p&gt;The map is not fundamentally different, though I would argue it is easier to read and provides more context (i.e. a legend and clear breaks between the different colors on the map). We still see noticeable clusters over Downtown and in South City.&lt;/p&gt;
 
-&lt;p&gt;I do think, however, the select of Part 1 Crimes was done for a specific reason. If you map violent crime (aggravated assault, rape, murder, and robbery), the conclusion you would come to about Downtown is slightly different.&lt;/p&gt;
+&lt;p&gt;I do think, however, the selection of Part 1 crimes was done for a specific reason. If you map violent crime (aggravated assault, rape, murder, and robbery), the conclusion you would come to about Downtown is slightly different.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;density_map_v_cropped.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
@@ -74,7 +74,7 @@
 
 &lt;h2 id=&#34;mapping-crime-rates-in-st-louis&#34;&gt;Mapping Crime Rates in St. Louis&lt;/h2&gt;
 
-&lt;p&gt;To get a sense about whether crime appears high in Downtown St. Louis because it is one of the more densly populated areas of the city, I&amp;rsquo;ve mapped Part 1 crime &lt;em&gt;rates&lt;/em&gt; per 1,000 individuals. To get there, I divide the total number of crimes by the total number of esimtated people living in each neighborhood, and then multiply by 1,000.&lt;/p&gt;
+&lt;p&gt;To get a sense about whether crime appears high in Downtown St. Louis because it is one of the more densely populated areas of the city, I&amp;rsquo;ve mapped Part 1 crime &lt;em&gt;rates&lt;/em&gt; per 1,000 individuals. To get there, I divide the total number of crimes by the total number of estimated people living in each neighborhood, and then multiply by 1,000.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;rate_map_p1_cropped.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
@@ -86,7 +86,7 @@
 
 &lt;h2 id=&#34;bottom-line&#34;&gt;Bottom Line&lt;/h2&gt;
 
-&lt;p&gt;The hotspot that the Belmar proposal highlights is due to property crimes like larcency and motor vehicle theft, rather than violent crimes. At no point is there a significant volumne of crime in the Central West End, which was the other neighborhood highlighted in Belmar&amp;rsquo;s proposal. In fact, a good argument could be made that policing resources are most needed in the areas of the city no emphasized in the report at all.&lt;/p&gt;
+&lt;p&gt;The hot spot that the Belmar proposal highlights is due to property crimes like larceny and motor vehicle theft, rather than violent crimes. At no point is there a significant volume of crime in the Central West End, which was the other neighborhood highlighted in Belmar&amp;rsquo;s proposal. In fact, a good argument could be made that policing resources are most needed in the areas of the city no emphasized in the report at all.&lt;/p&gt;
 </description>
     </item>
     
