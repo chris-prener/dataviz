@@ -1,0 +1,52 @@
+---
+date: 2019-04-19
+title: "St. Louis Metro Population Change"
+weight: 21
+output:
+  blogdown::html_page
+---
+
+## Interactive Map
+This is a fully interactive version of my [static map](/dataviz/project/stm-pop-change/), showing population change per Census tract in the metro St. Louis region from 2010 to 2017.
+<p> </p>
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+# dependencies
+library(magrittr)
+library(leaflet)
+library(sf)
+
+# load data
+load(file = "vizData.rda")
+
+# re-project
+counties <- st_transform(counties, crs = 4326)
+tracts <- st_transform(tracts, crs = 4326)
+
+# palette
+pal <- colorFactor(
+  palette = c("#2166AC", "#67A9CF", "#D1E5F0", "#F7F7F7", "#FDDBC7", "#EF8A62", "#B2182B"),
+  domain = tracts$breaks)
+
+# map 
+tracts %>%
+  leaflet(width = '100%', height = '450pt') %>%
+  addProviderTiles(providers$CartoDB.Positron) %>%
+  addPolygons(
+    color = "#222222", 
+    weight = .25, 
+    opacity = .5, 
+    smoothFactor = 0.5,
+    fillOpacity = 0.5, 
+    fillColor = ~pal(breaks),
+    highlightOptions = highlightOptions(color = "white", weight = 2, bringToFront = TRUE),
+    popup = paste("<b>ID:</b> ", tracts$GEOID, "<br>",
+                  "<b>2010 Population:</b> ", tracts$pop10, "<br>",
+                  "<b>2017 Population:</b> ", tracts$pop17,"<br>",
+                  "<b>% Change:</b> ", round(tracts$pctChange, digits = 2))) %>%
+    addLegend(colors = c("#2166AC", "#67A9CF", "#D1E5F0", "#F7F7F7", "#FDDBC7", "#EF8A62", "#B2182B"),
+              labels = c("> 25%", "15% to 25%", "5% to 15%", 
+                         "+/- 5%", "-5% to -15%", "-15% to -25%", "< -25%"), 
+              opacity = .5, 
+              title = "Population Change")
+```
+<p> </p>
