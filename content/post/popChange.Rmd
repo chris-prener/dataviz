@@ -7,7 +7,7 @@ output:
 ---
 
 ## Interactive Map
-This is a fully interactive version of my [static map](/dataviz/project/stm-pop-change/), showing population change per Census tract in the metro St. Louis region from 2010 to 2017.
+This is a fully interactive version of my [static map](./project/stm-pop-change/), showing population change per Census tract in the metro St. Louis region from 2010 to 2017.
 <p> </p>
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 # dependencies
