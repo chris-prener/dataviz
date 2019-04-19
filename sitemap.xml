@@ -4,7 +4,23 @@
     
     <url>
     
-      <loc>https://chris-prener.github.io/dataviz/project/stl-pop-change/</loc>
+      <loc>/dataviz/post/popchange/</loc>
+      <lastmod>2019-04-19T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/dataviz/project/stm-pop-change/</loc>
+      <lastmod>2019-04-19T00:00:00-05:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/dataviz/project/stl-pop-change/</loc>
       <lastmod>2018-12-09T00:00:00-06:00</lastmod>
     </url>
     
@@ -12,7 +28,7 @@
     
     <url>
     
-      <loc>https://chris-prener.github.io/dataviz/project/stl-belmar-crime/</loc>
+      <loc>/dataviz/project/stl-belmar-crime/</loc>
       <lastmod>2018-12-09T00:00:00-06:00</lastmod>
     </url>
     
@@ -20,7 +36,15 @@
     
     <url>
     
-      <loc>https://chris-prener.github.io/dataviz/categories/</loc>
+      <loc>/dataviz/privacy/</loc>
+      <lastmod>2018-06-28T00:00:00-05:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/dataviz/categories/</loc>
       <priority>0</priority>
     </url>
     
@@ -28,34 +52,7 @@
     
     <url>
     
-      <loc>https://chris-prener.github.io/dataviz/</loc>
-      <lastmod>2018-12-09T00:00:00-06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://chris-prener.github.io/dataviz/tags/crime/</loc>
-      <lastmod>2018-12-09T00:00:00-06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://chris-prener.github.io/dataviz/tags/demography/</loc>
-      <lastmod>2018-12-09T00:00:00-06:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://chris-prener.github.io/dataviz/tags/gis/</loc>
+      <loc>/dataviz/</loc>
       <lastmod>2018-12-09T00:00:00-06:00</lastmod>
       <priority>0</priority>
     </url>
@@ -64,7 +61,7 @@
     
     <url>
     
-      <loc>https://chris-prener.github.io/dataviz/project/</loc>
+      <loc>/dataviz/tags/crime/</loc>
       <lastmod>2018-12-09T00:00:00-06:00</lastmod>
       <priority>0</priority>
     </url>
@@ -73,7 +70,8 @@
     
     <url>
     
-      <loc>https://chris-prener.github.io/dataviz/publication_types/</loc>
+      <loc>/dataviz/tags/demography/</loc>
+      <lastmod>2019-04-19T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -81,8 +79,8 @@
     
     <url>
     
-      <loc>https://chris-prener.github.io/dataviz/tags/stlouis/</loc>
-      <lastmod>2018-12-09T00:00:00-06:00</lastmod>
+      <loc>/dataviz/tags/gis/</loc>
+      <lastmod>2019-04-19T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -90,7 +88,42 @@
     
     <url>
     
-      <loc>https://chris-prener.github.io/dataviz/tags/</loc>
+      <loc>/dataviz/post/</loc>
+      <lastmod>2019-04-19T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/dataviz/project/</loc>
+      <lastmod>2019-04-19T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/dataviz/publication_types/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/dataviz/tags/stlouis/</loc>
+      <lastmod>2019-04-19T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/dataviz/tags/</loc>
       <lastmod>2018-12-09T00:00:00-06:00</lastmod>
       <priority>0</priority>
     </url>

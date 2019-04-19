@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018-2019 Christopher G. Prener</copyright>
-    <lastBuildDate>Sun, 09 Dec 2018 00:00:00 -0600</lastBuildDate>
+    <lastBuildDate>Fri, 19 Apr 2019 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="/dataviz/tags/stlouis/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>St. Louis Metro Population Change</title>
+      <link>/dataviz/project/stm-pop-change/</link>
+      <pubDate>Fri, 19 Apr 2019 00:00:00 -0500</pubDate>
+      
+      <guid>/dataviz/project/stm-pop-change/</guid>
+      <description>One of the questions the Post-Dispatch&amp;rsquo;s Janelle O&amp;rsquo;Day asked me during our conversation about the latest Census Bureau numbers for St. Louis yesterday had to do with where we&amp;rsquo;d expect to see declines and increases in population within counties.
+For a quick recap, here are two plots summarizing county-level population change from 2010 to 2018 (using yesterday&amp;rsquo;s released estimates):
+ We&amp;rsquo;ve seen continued declines in St. Louis City, St. Clair county, and Madison county in particular along with stagnant growth in St.</description>
+    </item>
     
     <item>
       <title>St. Louis Neighborhood Change</title>
