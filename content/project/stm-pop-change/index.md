@@ -56,7 +56,7 @@ We've seen continued declines in St. Louis City, St. Clair county, and Madison c
 
 To give us some data on sub-county changes in advance of this December's updates to the American Community Survey, I calculated percent change at the Census tract level for every tract in the St. Louis metro area.
 
-![](tractMap_sm.png)
+![](tractMap_sm2.png)
 
 So where might we anticipate to see continued declines come December when the 2018 ACS is released? North City, North St. Louis County, and the core of St. Clair county are all good bets for parts of the region that we should expect to see continued sub-county population declines in. For growth, look to the western part of St. Charles county in particular, as well as those ex-urban tracts in Metro West. 
 
